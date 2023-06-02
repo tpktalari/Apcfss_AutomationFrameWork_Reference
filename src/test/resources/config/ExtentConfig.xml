@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extentreports>
+  <configuration>
+
+    <!-- report theme -->
+    <!-- STANDARD, DARK -->
+    <theme>DARK</theme>
+
+    <!-- document encoding -->
+    <!-- defaults to UTF-8 -->
+    <encoding>UTF-8</encoding>
+
+    <!-- protocol for script and stylesheets -->
+    <!-- defaults to https -->
+    <!-- HTTP, HTTPS -->
+    <protocol>HTTPS</protocol>
+
+    <!-- offline report -->
+    <timelineEnabled>true</timelineEnabled>
+    
+    <!-- offline report -->
+    <enableOfflineMode>false</enableOfflineMode>
+    
+    <!-- use thumbnails for base64 images -->
+    <!-- this may slowdown viewing tests -->
+    <thumbnailForBase64>true</thumbnailForBase64>
+
+    <!-- title of the document -->
+    <documentTitle>APCFMS_AUTOMATION_REPORT</documentTitle>
+
+    <!-- report name - <img src='C:\Users\tpkta\eclipse-workspace\automationframework\src\test\resources\Logos\apcfss_logo_Org.png'/>displayed at top-nav -->
+    <reportName>
+     <![CDATA[
+		<img src='C:\Users\tpkta\eclipse-workspace\automationframework\src\test\resources\Logos\apcfss_logo_new.png'/>
+		]]>
+    </reportName>
+
+    <!-- timestamp format -->
+    <timeStampFormat>MMM dd, yyyy HH:mm:ss</timeStampFormat>
+
+    <!-- custom javascript -->
+    <scripts>
+        <![CDATA[
+            $(document).ready(function() { 
+            $("body").addClass("dark");
+            });
+        ]]>
+    </scripts>
+
+    <!-- custom styles -->
+    <styles>
+        <![CDATA[
+         .report-name { padding-left: 10px; } .report-name > img { float: left;height: 90%;margin-left: 30px;margin-top: 2px;width: auto; } 
+        ]]>
+    </styles>
+
+  </configuration>
+</extentreports>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="methods" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.apcfss.listeners.ListenerImplementation"/>
+  </listeners>
+  <test parallel="methods" name="Test3(failed)">
+    <classes>
+      <class name="com.apcfss.tests.PDChallanTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="EnterDataAndClickProceedClickSubmitWithManualModeCheckAknowledgePageDetails"/>
+        </methods>
+      </class> <!-- com.apcfss.tests.PDChallanTest -->
+    </classes>
+  </test> <!-- Test3(failed) -->
+</suite> <!-- Failed suite [Suite] -->

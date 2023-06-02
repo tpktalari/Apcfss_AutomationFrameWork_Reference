@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Suite" thread-count="3" parallel="methods">
+<listeners>
+	<listener class-name="com.apcfss.listeners.ListenerImplementation"/>
+</listeners>
+  <test  name="Test1">
+    <classes>
+      <class name="com.apcfss.tests.PDChallanTest"/>
+      <methods>
+           <include name="checkPageIsReady"></include>
+           <include name="verifyModuleLogoAndTitle"></include>
+           <include name="ClickOnDepartmentInputBox"></include>
+           <include name="ClickOnServiceInputBox"></include>
+           <include name="EnterRequiredDataAndsClickOnProceed"></include>
+       </methods>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="Test2">
+    <classes>
+      <class name="com.apcfss.tests.PDChallanTest"/>
+       <methods>
+           <include name="EnterDataAndClickProceedClickPreviousWithManualMode"></include>
+           <include name="EnterDataAndClickProceedClickPreviousWithRtgs"></include>
+           <include name="EnterDataAndClickProceedClickPreviousWithEpay"></include>
+           <include name="EnterDataAndClickProceedClickSubmitWithManualMode"></include>
+           <include name="EnterDataAndClickProceedClickSubmitWithRtgs"></include>
+       </methods>
+    </classes>
+  </test> <!-- Test -->
+  
+   <test name="Test3">
+    <classes>
+      <class name="com.apcfss.tests.PDChallanTest"/>
+       <methods>
+           <include name="EnterDataAndClickProceedClickSubmitWithEpay"></include>
+           <include name="EnterDataAndClickProceedClickSubmitWithManualModeCheckAknowledgePage"></include>
+           <include name="EnterDataAndClickProceedClickSubmitWithManualModeCheckAknowledgePageDetails"></include>
+           <include name="EnterDataAndClickProceedClickSubmitWithRtgsStatus"></include>
+           <include name="EnterDataAndClickProceedClickSubmitWithEpayClickSbi"></include>
+       </methods>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
