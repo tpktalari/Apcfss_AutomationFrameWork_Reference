@@ -7,7 +7,11 @@
         <methods>
           <include name="EnterDataAndClickProceedClickSubmitWithEpayClickSbi"/>
           <include name="setUp"/>
+          <include name="EnterDataAndClickProceedClickSubmitWithEpayClickPayU"/>
           <include name="tearDown"/>
+          <include name="EnterDataAndClickProceedClickSubmitWithManualModeCheckAknowledgePageDetails"/>
+          <include name="ClickOnServiceInputBox"/>
+          <include name="EnterDataAndClickProceedClickSubmitWithManualModeCheckAknowledgePage"/>
         </methods>
       </class> <!-- com.apcfss.tests.PDChallanTest -->
     </classes>

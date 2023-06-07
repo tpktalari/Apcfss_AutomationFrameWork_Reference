@@ -13,6 +13,9 @@ public final class TreasuryInfoPage extends BasePage {
 	
 	@FindBy(xpath = "//span[text()='1. Treasury Info.']")
 	private WebElement elementTreasuryInfo;
+	
+	@FindBy(xpath = "//div[@class='fp-container']")
+	private WebElement fpContainer;
 
 	public TreasuryInfoPage() {
 		PageFactory.initElements(DriverManager.getDriver(), this);
@@ -50,5 +53,9 @@ public final class TreasuryInfoPage extends BasePage {
 		return elementTreasuryInfo.getCssValue("color");
 	}
 
+	public WebElement getFpContainer()
+	{
+		return fpContainer;
+	}
 
 }

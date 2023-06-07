@@ -43,4 +43,10 @@ public class DepartmentListPage extends BasePage {
 		return new TreasuryInfoPage();
 	}
 
+	public List<WebElement> getButtonsDepartment() {
+		return buttonsDepartment;
+	}
+	
+	
+	
 }

@@ -6,6 +6,7 @@ import java.util.Set;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
@@ -98,6 +99,10 @@ public class BasePage {
 	public void scrollActionByValue() {
 		((JavascriptExecutor) DriverManager.getDriver()).executeScript("window.scrollBy(0, arguments[0])", 2000);
 	}
+	
+	
+	
+	
 
 	/*
 	 * private void explicitlyWaitForElementToBeClickable(By by) { new

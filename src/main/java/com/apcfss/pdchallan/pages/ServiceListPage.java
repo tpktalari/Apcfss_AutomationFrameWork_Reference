@@ -45,5 +45,17 @@ public class ServiceListPage extends BasePage {
 		return new TreasuryInfoPage();
 	}
 
+	public List<WebElement> getButtonsServices() {
+		return buttonsServices;
+	}
+
+	public WebElement getButtonClose() {
+		return buttonClose;
+	}
+	
+	
+	
+	
+
 
 }

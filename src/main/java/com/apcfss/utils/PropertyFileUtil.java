@@ -14,8 +14,7 @@ import com.apcfss.frameworkexceptions.InvalidPathOfPropertyFileException;
 import com.apcfss.frameworkexceptions.PropertyFileUsageException;
 
 /**
- * Read the property file and store it in a HashMap for faster processing. Users
- * can prefer to use json instead of property file based on their requirement.
+ * Read the property file and store it in a HashMap for faster processing.
  * 
  * @author Pavan Kumar T
  * @version 1.0
@@ -42,7 +41,7 @@ public final class PropertyFileUtil {
 		}
 	}
 	/**
-	 * Receives the {@link com.apcfss.enums.ConfigProperties},converts to lowercase , return the corresponding value
+	 * Receives the {@link com.apcfss.enums.ConfigProperties},converts to lower case , return the corresponding value
 	 * for the key from the HashMap
 	 * @author Pavan Kumar T
 	 * 22-05-2023

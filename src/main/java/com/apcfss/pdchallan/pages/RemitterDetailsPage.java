@@ -1,6 +1,7 @@
 package com.apcfss.pdchallan.pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -93,12 +94,22 @@ public class RemitterDetailsPage extends BasePage {
 		return elementRemitterDetails.getCssValue("color");
 	}
 
-	public void isErrorMessageDisplayed() {
-		try {
-			isDisplayed(errorMessageElement, WaitingStrategy.VISIBLE, "Something Went Wrong Error Message");
-		} catch (Exception e) {
-			//Reporter.log("Error Message is not Displayed till waiting time",true);
-			//throw new RuntimeException("Waited 20 Secend");
+	public void IsErrorMessageDisplayed() {
+		try{
+			WebElement errorMark=null;
+			try {
+				errorMark=DriverManager.getDriver().findElement(By.xpath("//div[contains(@class,'2-error')]"));
+			}
+			catch (NoSuchElementException e) {
+				System.out.println("No Error Message");
+			}
+			if(errorMark!=null&&errorMark.isDisplayed())
+			{
+				throw new RuntimeException("Error Message Displayed");
+			}
+		}
+		catch (Exception e) {
+			
 		}
 	}
 }

@@ -54,7 +54,7 @@ public class ListenerImplementation implements ITestListener, ISuiteListener {
 	 */
 	@Override
 	public void onTestStart(ITestResult result) {
-		ExtentReport.createTest(result.getMethod().getMethodName());
+		ExtentReport.createTest(result.getMethod().getMethodName(),result.getMethod().getDescription());
 		ExtentReport.addAuthor(result.getMethod().getConstructorOrMethod().getMethod()
 				.getAnnotation(FrameworkAnnotations.class).author());
 		ExtentReport.addCategory(result.getMethod().getConstructorOrMethod().getMethod()

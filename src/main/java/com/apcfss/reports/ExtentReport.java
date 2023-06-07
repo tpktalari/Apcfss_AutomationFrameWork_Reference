@@ -64,8 +64,8 @@ public final class ExtentReport {
 	 * @author Pavan Kumar T 22-May-2023
 	 * @param testcaseName Test Name that needs to be reflected in the report
 	 */
-	public static void createTest(String testcaseName) {
-		ExtentTest test = reports.createTest(testcaseName);
+	public static void createTest(String testcaseName,String description) {
+		ExtentTest test = reports.createTest(testcaseName,description);
 		ExtentManager.setExtentTest(test);
 	}
 
