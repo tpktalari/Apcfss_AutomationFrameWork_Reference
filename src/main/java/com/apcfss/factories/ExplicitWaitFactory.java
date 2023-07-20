@@ -1,5 +1,7 @@
 package com.apcfss.factories;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -34,18 +36,22 @@ public final class ExplicitWaitFactory {
 	public static WebElement performExplicitWait(WaitingStrategy waitStrategy, By by) {
 		WebElement element = null;
 		if (waitStrategy == WaitingStrategy.CLICKABLE) {
-			element = new WebDriverWait(DriverManager.getDriver(), FrameworkConstants.getExplicitWait())
+			element = new WebDriverWait(DriverManager.getDriver(), Duration.ofSeconds(FrameworkConstants.getExplicitWait()))
 					.until(ExpectedConditions.elementToBeClickable(by));
 		} else if (waitStrategy == WaitingStrategy.PRESENCE) {
-			element = new WebDriverWait(DriverManager.getDriver(), FrameworkConstants.getExplicitWait())
+			element = new WebDriverWait(DriverManager.getDriver(), Duration.ofSeconds(FrameworkConstants.getExplicitWait()))
 					.until(ExpectedConditions.presenceOfElementLocated(by));
 		} else if (waitStrategy == WaitingStrategy.VISIBLE) {
-			element = new WebDriverWait(DriverManager.getDriver(), FrameworkConstants.getExplicitWait())
+			element = new WebDriverWait(DriverManager.getDriver(), Duration.ofSeconds(FrameworkConstants.getExplicitWait()))
 					.until(ExpectedConditions.visibilityOfElementLocated(by));
 		}
 		else if (waitStrategy == WaitingStrategy.NONE) {
 			element=DriverManager.getDriver().findElement(by);
 		}
+//		else if(waitStrategy==WaitingStrategy.HANDLESTALEELEMENT) {
+//			new WebDriverWait(DriverManager.getDriver(), FrameworkConstants.getExplicitWait())
+//			.until(d -> {});
+//			}
 		return element;
 	}
 }

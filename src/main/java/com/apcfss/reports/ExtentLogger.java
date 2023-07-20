@@ -39,7 +39,7 @@ public final class ExtentLogger {
 		} else {
 			fail(message);
 		}
-	}
+	} 
 
 	public static void skip(String message, boolean isScreenshotNeeded) {
 		if (PropertyFileUtil.readDataFromPropertyFile(ConfigProperties.SKIPPEDSTEPSSCREENSHOT).equalsIgnoreCase("yes")

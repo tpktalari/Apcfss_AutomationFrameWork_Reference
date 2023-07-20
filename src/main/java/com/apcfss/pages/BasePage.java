@@ -11,9 +11,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import com.apcfss.driver.DriverManager;
+import com.apcfss.enums.LogType;
 import com.apcfss.enums.WaitingStrategy;
 import com.apcfss.factories.ExplicitWaitFactory;
 import com.apcfss.reports.ExtentLogger;
+import com.apcfss.reports.FrameworkLogger;
 
 public class BasePage {
 	protected void click(By by, WaitingStrategy waitStrategy, String elementName) {
@@ -21,6 +23,8 @@ public class BasePage {
 		element.click();
 		try {
 			ExtentLogger.pass(elementName + " is clicked", true);
+			
+			//FrameworkLogger.log(LogType.EXTENTANDCONSOLE, elementName + " is clicked");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -47,7 +51,7 @@ public class BasePage {
 			if (result) {
 				ExtentLogger.pass(elelemtName + " Displayed ", true);
 			} else {
-				ExtentLogger.fail(elelemtName + " Displayed ", true);
+				ExtentLogger.fail(elelemtName + " Not Displayed ", true);
 			}
 		} catch (Exception e) {
 			e.printStackTrace();

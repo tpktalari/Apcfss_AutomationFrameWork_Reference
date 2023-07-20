@@ -11,5 +11,5 @@ package com.apcfss.enums;
  * @see com.apcfss.pages.BasePage
  */
 public enum WaitingStrategy {
-	CLICKABLE, PRESENCE, VISIBLE, NONE
+	CLICKABLE, PRESENCE, VISIBLE, NONE, HANDLESTALEELEMENT
 }

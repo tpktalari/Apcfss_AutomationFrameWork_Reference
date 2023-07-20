@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>8/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>2/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri May 26 18:00:09 IST 2023</td>
+<td>Started on:</td><td>Mon Jul 10 16:05:47 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>46 seconds (46613 ms)</td>
+<tr><td>Total time:</td><td>8 seconds (8803 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,204 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.apcfss.tests.OrangeHrmTest.loginLogoutTest()'><b>loginLogoutTest</b><br>Test class: com.apcfss.tests.OrangeHrmTest<br>Parameters: {fname=, password=admin126, browser=chrome, testcasecame=loginLogoutTest, execute=yes, username=Admin, lastname=}</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //i[contains(@class,&apos;userdropdown-icon&apos;)] (tried for 10 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at com.apcfss.factories.ExplicitWaitFactory.performExplicitWait(ExplicitWaitFactory.java:38)
-	at com.apcfss.pages.BasePage.click(BasePage.java:13)
-	at com.apcfss.pages.OrangeHomePage.clickUserDD(OrangeHomePage.java:17)
-	at com.apcfss.tests.OrangeHrmTest.loginLogoutTest(OrangeHrmTest.java:21)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//i[contains(@class,&apos;userdropdown-icon&apos;)]&quot;}
-  (Session info: chrome=113.0.5672.127)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;PAVANKUMAR&apos;, ip: &apos;172.17.205.58&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\tpkta\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54135}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 94e6e6b467fffe4c44aefb70b1c226d3
-*** Element info: {Using=xpath, value=//i[contains(@class,&apos;userdropdown-icon&apos;)]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	... 19 more
-... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1084618697", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1084618697'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //i[contains(@class,&apos;userdropdown-icon&apos;)] (tried for 10 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at com.apcfss.factories.ExplicitWaitFactory.performExplicitWait(ExplicitWaitFactory.java:38)
-	at com.apcfss.pages.BasePage.click(BasePage.java:13)
-	at com.apcfss.pages.OrangeHomePage.clickUserDD(OrangeHomePage.java:17)
-	at com.apcfss.tests.OrangeHrmTest.loginLogoutTest(OrangeHrmTest.java:21)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
-	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:75)
-	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//i[contains(@class,&apos;userdropdown-icon&apos;)]&quot;}
-  (Session info: chrome=113.0.5672.127)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;PAVANKUMAR&apos;, ip: &apos;172.17.205.58&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\tpkta\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54135}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 94e6e6b467fffe4c44aefb70b1c226d3
-*** Element info: {Using=xpath, value=//i[contains(@class,&apos;userdropdown-icon&apos;)]}
-	at jdk.internal.reflect.GeneratedConstructorAccessor24.newInstance(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	... 19 more
-</pre></div></td>
-<td>13</td>
-<td>com.apcfss.tests.OrangeHrmTest@5e2c3d18</td></tr>
-<tr>
-<td title='com.apcfss.tests.OrangeHrmTest.newTest()'><b>newTest</b><br>Test class: com.apcfss.tests.OrangeHrmTest<br>Parameters: {fname=, password=admin126, browser=chrome, testcasecame=loginLogoutTest, execute=yes, username=Admin, lastname=}</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //i[contains(@class,&apos;userdropdown-icon&apos;)] (tried for 10 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at com.apcfss.factories.ExplicitWaitFactory.performExplicitWait(ExplicitWaitFactory.java:38)
-	at com.apcfss.pages.BasePage.click(BasePage.java:13)
-	at com.apcfss.pages.OrangeHomePage.clickUserDD(OrangeHomePage.java:17)
-	at com.apcfss.tests.OrangeHrmTest.newTest(OrangeHrmTest.java:31)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//i[contains(@class,&apos;userdropdown-icon&apos;)]&quot;}
-  (Session info: chrome=113.0.5672.127)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;PAVANKUMAR&apos;, ip: &apos;172.17.205.58&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\tpkta\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54293}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3d7797cb33c8294f923d15b68ed8fae1
-*** Element info: {Using=xpath, value=//i[contains(@class,&apos;userdropdown-icon&apos;)]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	... 19 more
-... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1578487688", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1578487688'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //i[contains(@class,&apos;userdropdown-icon&apos;)] (tried for 10 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at com.apcfss.factories.ExplicitWaitFactory.performExplicitWait(ExplicitWaitFactory.java:38)
-	at com.apcfss.pages.BasePage.click(BasePage.java:13)
-	at com.apcfss.pages.OrangeHomePage.clickUserDD(OrangeHomePage.java:17)
-	at com.apcfss.tests.OrangeHrmTest.newTest(OrangeHrmTest.java:31)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
-	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:75)
-	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//i[contains(@class,&apos;userdropdown-icon&apos;)]&quot;}
-  (Session info: chrome=113.0.5672.127)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;PAVANKUMAR&apos;, ip: &apos;172.17.205.58&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\tpkta\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54293}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3d7797cb33c8294f923d15b68ed8fae1
-*** Element info: {Using=xpath, value=//i[contains(@class,&apos;userdropdown-icon&apos;)]}
-	at jdk.internal.reflect.GeneratedConstructorAccessor24.newInstance(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	... 19 more
-</pre></div></td>
-<td>11</td>
-<td>com.apcfss.tests.OrangeHrmTest@5e2c3d18</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -273,45 +75,30 @@ Session ID: 3d7797cb33c8294f923d15b68ed8fae1
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.apcfss.tests.OrangeHrmTest.loginLogoutTest()'><b>loginLogoutTest</b><br>Test class: com.apcfss.tests.OrangeHrmTest<br>Parameters: {fname=, password=admin123, browser=chrome, testcasecame=newtest, execute=yes, username=Admin, lastname=}</td>
+<td title='com.apcfss.tests.PDChallanTest.ClickOnDepartmentInputBox()'><b>ClickOnDepartmentInputBox</b><br>Test class: com.apcfss.tests.PDChallanTest<br>Test method: Click On Department Input box and chexk whether Department listpage is displayed or not<br/>
+<a href="#Output-289663448" onClick='toggleBox("Output-289663448", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-289663448" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-289663448">
+Department List (451)<br/>
+Department List Page is Displayed<br/>
+</div>
+</td>
 <td></td>
-<td>4</td>
-<td>com.apcfss.tests.OrangeHrmTest@5e2c3d18</td></tr>
+<td>1</td>
+<td>com.apcfss.tests.PDChallanTest@15a04efb</td></tr>
 <tr>
-<td title='com.apcfss.tests.OrangeHrmTest.loginLogoutTest()'><b>loginLogoutTest</b><br>Test class: com.apcfss.tests.OrangeHrmTest<br>Parameters: {fname=, password=admin123, browser=edge, testcasecame=loginLogoutTest, execute=no, username=Admin, lastname=}</td>
+<td title='com.apcfss.tests.PDChallanTest.verifyModuleLogoAndTitle()'><b>verifyModuleLogoAndTitle</b><br>Test class: com.apcfss.tests.PDChallanTest<br>Test method: verify whether logo is displayed and also checking the required page title<br/>
+<a href="#Output-112359899" onClick='toggleBox("Output-112359899", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-112359899" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-112359899">
+GO.A.P. is Dispayed<br/>
+</div>
+</td>
 <td></td>
-<td>7</td>
-<td>com.apcfss.tests.OrangeHrmTest@5e2c3d18</td></tr>
-<tr>
-<td title='com.apcfss.tests.OrangeHrmTest.loginLogoutTest()'><b>loginLogoutTest</b><br>Test class: com.apcfss.tests.OrangeHrmTest<br>Parameters: {fname=, password=admin123, browser=chrome, testcasecame=loginLogoutTest, execute=yes, username=Admin, lastname=}</td>
-<td></td>
-<td>7</td>
-<td>com.apcfss.tests.OrangeHrmTest@5e2c3d18</td></tr>
-<tr>
-<td title='com.apcfss.tests.OrangeHrmTest.loginLogoutTest()'><b>loginLogoutTest</b><br>Test class: com.apcfss.tests.OrangeHrmTest<br>Parameters: {fname=, password=admin123, browser=edge, testcasecame=newtest, execute=no, username=Admin, lastname=}</td>
-<td></td>
-<td>6</td>
-<td>com.apcfss.tests.OrangeHrmTest@5e2c3d18</td></tr>
-<tr>
-<td title='com.apcfss.tests.OrangeHrmTest.newTest()'><b>newTest</b><br>Test class: com.apcfss.tests.OrangeHrmTest<br>Parameters: {fname=, password=admin123, browser=chrome, testcasecame=loginLogoutTest, execute=yes, username=Admin, lastname=}</td>
-<td></td>
-<td>6</td>
-<td>com.apcfss.tests.OrangeHrmTest@5e2c3d18</td></tr>
-<tr>
-<td title='com.apcfss.tests.OrangeHrmTest.newTest()'><b>newTest</b><br>Test class: com.apcfss.tests.OrangeHrmTest<br>Parameters: {fname=, password=admin123, browser=chrome, testcasecame=newtest, execute=yes, username=Admin, lastname=}</td>
-<td></td>
-<td>7</td>
-<td>com.apcfss.tests.OrangeHrmTest@5e2c3d18</td></tr>
-<tr>
-<td title='com.apcfss.tests.OrangeHrmTest.newTest()'><b>newTest</b><br>Test class: com.apcfss.tests.OrangeHrmTest<br>Parameters: {fname=, password=admin123, browser=edge, testcasecame=loginLogoutTest, execute=no, username=Admin, lastname=}</td>
-<td></td>
-<td>9</td>
-<td>com.apcfss.tests.OrangeHrmTest@5e2c3d18</td></tr>
-<tr>
-<td title='com.apcfss.tests.OrangeHrmTest.newTest()'><b>newTest</b><br>Test class: com.apcfss.tests.OrangeHrmTest<br>Parameters: {fname=, password=admin123, browser=edge, testcasecame=newtest, execute=no, username=Admin, lastname=}</td>
-<td></td>
-<td>7</td>
-<td>com.apcfss.tests.OrangeHrmTest@5e2c3d18</td></tr>
+<td>0</td>
+<td>com.apcfss.tests.PDChallanTest@15a04efb</td></tr>
 </table><p>
 </body>
 </html>
