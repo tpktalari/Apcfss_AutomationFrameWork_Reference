@@ -27,7 +27,7 @@ public final class Driver {
 			} catch (MalformedURLException e) {
 				throw new BrowserInvocationFailedException("Please check capabilites of browser");
 			}
-			DriverManager.getDriver().get(PropertyFileUtil.readDataFromPropertyFile(ConfigProperties.URLAMAZON));
+			DriverManager.getDriver().get(PropertyFileUtil.readDataFromPropertyFile(ConfigProperties.URL));
 			DriverManager.getDriver().manage().window().maximize();
 			DriverManager.getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		}

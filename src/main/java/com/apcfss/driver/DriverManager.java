@@ -18,7 +18,7 @@ public final class DriverManager {
 	private DriverManager() {
 	}
 
-	public static ThreadLocal<WebDriver> drLocal = new ThreadLocal<>();
+	public static ThreadLocal<WebDriver> drLocal = new ThreadLocal<WebDriver>();
 
 	/**
 	 * Returns the thread safe {@link org.openqa.selenium.WebDriver} instance

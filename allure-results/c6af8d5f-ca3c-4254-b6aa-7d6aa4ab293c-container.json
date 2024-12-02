@@ -1,0 +1,1 @@
+{"uuid":"c6af8d5f-ca3c-4254-b6aa-7d6aa4ab293c","name":"com.apcfss.tests.BaseTest.setUp","children":["b1c85515-07e3-454e-a425-ec1eeb54eeda"],"description":"","befores":[{"name":"setUp","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1713522298112,"stop":1713522299824}],"afters":[],"start":1713522298112,"stop":1713522299824}

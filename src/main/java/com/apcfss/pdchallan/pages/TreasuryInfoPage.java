@@ -9,6 +9,8 @@ import com.apcfss.driver.DriverManager;
 import com.apcfss.enums.WaitingStrategy;
 import com.apcfss.pages.BasePage;
 
+import io.qameta.allure.Step;
+
 public final class TreasuryInfoPage extends BasePage {
 	
 	@FindBy(xpath = "//span[text()='1. Treasury Info.']")
@@ -40,6 +42,7 @@ public final class TreasuryInfoPage extends BasePage {
 		return new RemitterDetailsPage();
 	}
 
+	@Step("getting home page logo")
 	public WebElement getLogoGoap() {
 		return DriverManager.getDriver().findElement(logoGoap);
 	}

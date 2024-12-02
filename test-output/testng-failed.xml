@@ -3,11 +3,13 @@
 <suite parallel="none" name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test parallel="none" name="Default test(failed)">
     <classes>
-      <class name="com.apcfss.tests.DockerTest">
+      <class name="com.apcfss.tests.NidhiClassIVTest">
         <methods>
-          <include name="dockerTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="classIVtest"/>
         </methods>
-      </class> <!-- com.apcfss.tests.DockerTest -->
+      </class> <!-- com.apcfss.tests.NidhiClassIVTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

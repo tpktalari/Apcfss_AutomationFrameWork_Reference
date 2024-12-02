@@ -14,7 +14,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import com.apcfss.enums.ConfigProperties;
 import com.apcfss.utils.PropertyFileUtil;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+
 
 public final class DriverFactory {
 	private DriverFactory() {
